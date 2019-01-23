@@ -16,9 +16,11 @@
 
 // Taps must happen in this interval to get recognized (and trigger move to layer 2 with 2 taps).
 // This can be huge due to the implementation.
-#define DANCING_TERM_SPECIAL_LEAD 500
+#define DANCING_TERM_SPECIAL_LEAD 370
+// Taps must happen in this interval to get recognized (and trigger ? with 2 taps).
+#define DANCING_TERM_SLASH_QUESTION_MARK_RALT 370
 // Taps must happen in this interval to get recognized (and trigger : with 2 taps).
-#define DANCING_TERM_COLON_CONTROL 380
+#define DANCING_TERM_COLON_SEMI 370
 
 #undef DEBOUNCE
 #define DEBOUNCE 5
