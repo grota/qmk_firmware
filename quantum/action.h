@@ -145,6 +145,10 @@ void process_record_tap_hint(keyrecord_t *record);
         } while (0)
 #endif
 
+#ifdef BILATERAL_COMBINATIONS
+__attribute__((weak)) bool bilateral_combinations_left(keypos_t key);
+#endif
+
 void debug_event(keyevent_t event);
 void debug_record(keyrecord_t record);
 void debug_action(action_t action);
